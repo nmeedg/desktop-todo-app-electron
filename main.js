@@ -1,22 +1,32 @@
-const {app, BrowserWindow} = require('electron');
+"use strict";
+
+const { app, BrowserWindow } = require('electron');
 const url = require('url');
+const path = require('path');
+
 
 function createWindow() {
     const mainWindow = new BrowserWindow({
         title: "TodoList",
-        width: 800,
-        height: 600,
+        width: 1100,
+        height: 800,
         autoHideMenuBar: true,
+        webPreferences: {
+            webSecurity: true,
+            contextIsolation: true,
+            preload: path.join(__dirname, 'preload.js'),
+            nodeIntegration: true,
+        }
     });
 
     const startUrl = url.format({
-        pathname: require('path').join(__dirname, 'index.html'),
+        pathname: path.join(__dirname, 'index.html'),
         protocol: 'file',
         slashes: true
     });
 
     mainWindow.loadURL(startUrl);
-
+    //mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', createWindow);

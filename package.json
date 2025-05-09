@@ -5,6 +5,7 @@
   "main": "main.js",
   "author": "devit",
   "license": "MIT",
+  "homepage": "./dist",
   "scripts": {
     "start": "electron .",
     "dev": "npx electronmon .",
@@ -13,6 +14,7 @@
     "package": "electron-builder --win --x64"
   },
   "dependencies": {
-    "electron": "^36.2.0"
+    "electron": "^36.2.0",
+    "electron-store": "^10.0.1"
   }
 }

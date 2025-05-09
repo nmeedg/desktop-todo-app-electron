@@ -2,7 +2,7 @@
 
 A simple and efficient Todo App to manage your daily tasks.
 
-![App Screenshot](assets/capture.png)
+![App Screenshot](assets/capture.jpg)
 
 ## Features
 
@@ -70,5 +70,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any inquiries or feedback, feel free to reach out:
 
-- Email: yourname@example.com
-- GitHub: [yourusername](https://github.com/yourusername)
+- Email: ngoufackedgard1@gmail.com
+- GitHub: [nmeedg (devit)](https://github.com/nmeedg)
